@@ -44,9 +44,6 @@ To start the server, run:
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
-I'll help you enhance the API usage documentation in the README.md with more detailed and practical examples. Here's how we can update the API section:
-
-```markdown:/Users/sampan/Documents/GitHub/GeminiMixSuper/README.md
 ## API Usage Instructions
 
 ### Base URL
@@ -70,7 +67,7 @@ Authorization: Bearer YOUR_API_KEY
 #### Request Parameters
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| model | string | Yes | Model to use ("openai" or "gemini") |
+| model | string | Yes | Model to use|
 | messages | array | Yes | Array of message objects |
 | stream | boolean | No | Enable streaming responses (default: true) |
 | max_tokens | integer | No | Maximum tokens in response |
@@ -82,7 +79,7 @@ curl -X POST "http://your-server:8000/v1/chat/completions" \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "openai",
+    "model": "deepseek_r1",
     "messages": [
       {
         "role": "user",
